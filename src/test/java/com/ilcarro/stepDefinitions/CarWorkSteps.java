@@ -66,7 +66,7 @@ public class CarWorkSteps {
     }
   @Then("User verifies Message Car wars added")
     public void get_message(){
-        new LetCarWorkPage(driver).isAddedMessageDisplayed("opel corsa added successful");
+        new LetCarWorkPage(driver).isAddedMessageDisplayed("Car added");
     }
 
   /* @And("User clicks on Show car")
