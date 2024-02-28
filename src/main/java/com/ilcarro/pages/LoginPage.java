@@ -39,6 +39,20 @@ public class LoginPage extends BasePage{
         return this;
     }
 
+    @FindBy(css = "[class='positive-button ng-star-inserted']")
+    WebElement okButton;
+    public LoginPage clickOnOkButton() {
+        click(okButton);
+        return this;
+    }
+
+    @FindBy(xpath = "//a[.=' Let the car work ']")
+    WebElement one;
+    public LoginPage clickOnTheLetTheCarButton() {
+        pause(1000);
+        click(one);
+        return this;
+    }
     public LoginPage enterWrondData(DataTable table) {
         List<Map<String,String>> dataTable = table.asMaps();
         String email = dataTable.get(0).get("email");
@@ -54,4 +68,7 @@ public class LoginPage extends BasePage{
     assert  isElementDisplayed(error);
         return this;
     }
+
+
+
 }

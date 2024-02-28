@@ -31,6 +31,7 @@ public class LoginSteps {
     }
     @And("User enters valid email and wrong password")
     public void enters_valid_email_wrong_password(DataTable table){
+
         new LoginPage(driver).enterWrondData(table);
     }
     @Then("User verifies error  message is displayed")
