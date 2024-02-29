@@ -109,15 +109,16 @@ public class LetCarWorkPage extends BasePage{
     @FindBy(css = "[type='submit']")
     WebElement sub_mit;
     public LetCarWorkPage clickOnSubmitButton() {
+        pause(1000);
         click(sub_mit);
         return this;
     }
 
     @FindBy(xpath = "//h1[.='Car added']")
     WebElement message;
-    public LetCarWorkPage isAddedMessageDisplayed(String error) {
+    public LetCarWorkPage isAddedMessageDisplayed(String text) {
         pause(2000);
-        assert message.getText().contains(error);
+        assert message.getText().contains(text);
         return this;
     }
 
