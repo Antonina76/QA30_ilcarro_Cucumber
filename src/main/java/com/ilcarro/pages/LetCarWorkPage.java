@@ -21,7 +21,7 @@ public class LetCarWorkPage extends BasePage{
     public LetCarWorkPage enterLocationAndCarDetails(String location) {
         type(pickUpPlace,location);
         pause(1000);
-        pickUpPlace.sendKeys(Keys.DOWN);
+       pickUpPlace.sendKeys(Keys.DOWN);
         pickUpPlace.sendKeys(Keys.ENTER);
         return this;
     }
@@ -62,7 +62,7 @@ public class LetCarWorkPage extends BasePage{
     public LetCarWorkPage chooseTheFuel(String fuel) {
         click(fu_el);
         fu_el.sendKeys(fuel);
-        click(sub_mit);
+        fu_el.sendKeys(Keys.ENTER);
         return this;
     }
 

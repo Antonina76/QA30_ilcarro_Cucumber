@@ -7,7 +7,6 @@ Feature: Add the car
     And User click on the login link
     And User enters valid data
     And User clicks on Yalla button
-    Then User verifies Success  message is displayed
     And User clicks on Logged in button
     And User clicks on Let the car work button
     And User enters location

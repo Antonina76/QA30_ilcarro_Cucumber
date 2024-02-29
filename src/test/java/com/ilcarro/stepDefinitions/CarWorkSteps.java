@@ -53,7 +53,7 @@ public class CarWorkSteps {
     }
     @And("User enters car registration number")
     public void car_number(){
-        new LetCarWorkPage(driver).carNumber("tö-16");
+        new LetCarWorkPage(driver).carNumber("tö-3");
     }
 
     @And("User enters car price")
