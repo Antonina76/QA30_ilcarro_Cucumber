@@ -53,7 +53,7 @@ public class CarWorkSteps {
     }
     @And("User enters car registration number")
     public void car_number(){
-        new LetCarWorkPage(driver).carNumber("tp-4");
+        new LetCarWorkPage(driver).carNumber("tp-w");
     }
 
     @And("User enters car price")
@@ -69,11 +69,9 @@ public class CarWorkSteps {
         new LetCarWorkPage(driver).isAddedMessageDisplayed("Car added");
     }
 
-  /* @And("User clicks on Show car")
-    public void click_on_show_car(){
-        new LetCarWorkPage(driver).clickOnShowCarButton();
-    }
-
-*/
+  @And("User clicks on Show car")
+   public void click_on_show_car(){
+      new LetCarWorkPage(driver).clickOnShowCarButton();
+   }
 
 }

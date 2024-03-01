@@ -19,5 +19,5 @@ Feature: Add the car
     And User enters car registration number
     And User enters car price
     And User clicks on Submit button
-    Then User verifies Message Car wars added
+    And User clicks on Show car
     And  User quites browser

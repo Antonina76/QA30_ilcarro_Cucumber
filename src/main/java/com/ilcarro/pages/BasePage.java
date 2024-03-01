@@ -1,6 +1,7 @@
 package com.ilcarro.pages;
 
 import org.checkerframework.checker.units.qual.C;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,6 +11,7 @@ import java.time.Duration;
 
 public abstract class BasePage {
     public static WebDriver driver;
+    JavascriptExecutor js;
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
@@ -49,4 +51,9 @@ public abstract class BasePage {
         }
 
     }
+    public void clickWithJS(WebElement element, int x, int y) {
+        js.executeScript("window.scrollBy(" + x + "," + y + ")");
+        click(element);
+    }
+
 }
