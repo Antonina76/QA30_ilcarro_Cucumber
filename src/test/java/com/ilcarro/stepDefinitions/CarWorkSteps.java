@@ -1,5 +1,6 @@
 package com.ilcarro.stepDefinitions;
 
+import com.ilcarro.pages.AddCarPage;
 import com.ilcarro.pages.LetCarWorkPage;
 import com.ilcarro.pages.LoginPage;
 import io.cucumber.java.en.And;
@@ -53,7 +54,7 @@ public class CarWorkSteps {
     }
     @And("User enters car registration number")
     public void car_number(){
-        new LetCarWorkPage(driver).carNumber("tp-w");
+        new LetCarWorkPage(driver).carNumber("56-78-789");
     }
 
     @And("User enters car price")
@@ -72,6 +73,10 @@ public class CarWorkSteps {
   @And("User clicks on Show car")
    public void click_on_show_car(){
       new LetCarWorkPage(driver).clickOnShowCarButton();
+   }
+   @And("User clicks on Logout button")
+    public void click_on_logout(){
+        new AddCarPage(driver).scrollUp();
    }
 
 }

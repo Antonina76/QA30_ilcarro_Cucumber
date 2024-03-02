@@ -20,4 +20,5 @@ Feature: Add the car
     And User enters car price
     And User clicks on Submit button
     And User clicks on Show car
+    And User clicks on Logout button
     And  User quites browser
